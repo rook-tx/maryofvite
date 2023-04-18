@@ -1,0 +1,55 @@
+// ----------
+// Colours
+// ----------
+
+$b          = #000
+$w          = #fff
+
+
+// ----------
+// Fonts
+// ----------
+
+$merri			= 'Merriweather', serif
+$mont				= 'Montserrat', sans-serif
+$value-sans = 'Value Sans', sans-serif
+$value-serif = 'Value Serif', serif
+
+font-smoothing()
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+
+
+// ----------
+// Mixins
+// ----------
+
+random(a,b)
+	return math(math(0, 'random')*(b - a + 1) + a, 'floor')
+
+abs()
+	height 100%
+	left 0
+	position absolute
+	top 0
+	width 100%
+
+// ----------
+// Breakpoints
+// ----------
+
+$mobile     = 640px
+$tablet     = 864px
+$desktop    = 1200px
+
+above($size)
+	@media screen and (min-width: $size + 1)
+		{block}
+
+below($size)
+	@media screen and (max-width: $size)
+		{block}
+
+@import '_ease'
+@import '_type'

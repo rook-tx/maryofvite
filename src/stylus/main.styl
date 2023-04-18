@@ -1,0 +1,27 @@
+@import '_variables'
+@import '_fonts'
+
+html, body, div
+	box-sizing border-box
+
+html, body
+	margin 0
+	min-height 100%
+
+html
+	background $b
+	color $w
+	font-family $value-sans
+	font-size ($p / 16) * 75%
+	-webkit-tap-highlight-color transparent
+	text-size-adjust 100%
+
+	+above($tablet)
+		font-size ($p / 16) * 100%
+
+body
+	font-size 100%
+	line-height $let
+	
+@import '_global'
+@import '_slides'

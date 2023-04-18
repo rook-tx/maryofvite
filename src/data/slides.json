@@ -1,0 +1,37 @@
+{
+	"home": {
+		"heading": "Mary Wilkinson",
+		"body": "<h2>I sold my soul to be a good copywriter.<br>What can I sell for you?</h2>"
+	},
+	"agencies": {
+		"heading": "What I do",
+		"body": [
+			"<p>If you want to make people do something, you have to make them feel something first.</p>",
+			"<p>My words have gotten people excited about their creative potential.</p>",
+			"<p>My words have inspired people to treat their employees better.</p>",
+			"<p>My words have made people want to seek spiritual enlightenment through the purchase of expensive beauty products.</p>",
+			"<p>My words have made boomers want to spice things up in the bedroom.</p>",
+			"<p>My words have compelled people to reward themselves with sugar, liquor, and SUVs.</p>",
+			"<p>My words have made people see that true luxury is about actualization, not an address (while still making them want the address).</p>",
+			"<p>My words have shown people the value of financially supporting people they’ll never meet.</p>",
+			"<p>My words have made people reconsider their perception of mental health treatment.</p>",
+			"<p>My words have made people crave a coffee while swiping for a hot piece of ass (won an award for that one).</p>",
+			"<p>My words have gotten the attention of small business owners and global CEOs.</p>",
+			"<p>My words have helped change consumer perception, increase sales, and secure millions in funding.</p>",
+			"<p>My words have helped companies figure out where they stand, next to the fifty other brands selling the same thing.</p>"		
+		],
+		"footer": "<p>If my words have made you want to learn more about me, <a href='mailto:maryofone@gmail.com' target='_blank' rel='noopener' title='Email Mary at maryofone@gmail.com'>send me an email</a>.<br><br> If you want to know what I really think, keep reading.</p>"
+	},
+	"agents": {
+		"heading": "What I think",
+		"body": [
+			"<p>I don’t love working in advertising.</p>",
+			"<p>My words have persuaded people to buy products they don’t need, to believe purchases will fulfill them, and to think that brands are invested in their well-being more than making a profit.</p>",
+			"<p>As a writer, I want to connect with people, and I let companies exploit that desire to achieve their objectives.</p>",
+			"<p>I don’t love helping brands separate people from their money. Nor do I love contributing to an industry that preys on people’s fears and egos.</p>",
+			"<p>What I do love is working with people who have a challenge that needs solving; a challenge that can be solved by communicating wisely.</p>",
+			"<p>I like helping that one person find the perfect words. And if it doesn’t contribute to our impending societal collapse, all the better.</p>"
+		],
+		"footer": "<p>If you want to learn more about how my disdain for advertising is an asset, <a href='mailto:maryofone@gmail.com' target='_blank' rel='noopener' title='Email Mary at maryofone@gmail.com'>send me an email</a>.<br><br> If you want to know how my knack for emotionally persuasive language helps my clients, here’s a quick rundown.</p>"
+	}
+}

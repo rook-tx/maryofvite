@@ -1,0 +1,157 @@
+// ----------
+// Slide
+// ----------
+
+.header
+	background darken($w,3%)
+	color lighten($b,3%)
+	pad(.75,1,.25)
+	
+	+above($tablet)
+		pad(1,2,.5)
+
+	h1, h2
+		fs(mp(1))
+		font-family $value-serif
+		font-weight bold
+		line-height $let*1rem
+		margin: 0
+		text-align left
+
+	h1
+		fs(mp(4))
+		line-height $let*1rem
+		mgn(0,0,.5)
+
+	h2
+		mgn(.25,0,.25)
+
+	.even &
+		background lighten($b,3%)
+		color darken($w,8%)
+		
+.body
+	background lighten($b,3%)
+	color darken($w,8%)
+	pad(.5,1)
+	position absolute
+	top $let*2.5rem
+	bottom 0
+	left 0
+	width 100%
+
+	.even &
+		background darken($w,3%)
+		color lighten($b,3%)
+
+	+above($tablet)
+		top $let*3rem
+		pad(1,2)
+
+	@media screen and (min-width: $tablet) and (min-height: $tablet)
+		pad(2,2)
+
+	p, li, h2
+		mgn(1,0)
+		text-align left	
+
+	ul, ol
+		pad(0,0,0,1)
+
+	ol
+		li
+			margin 0
+		
+	p, li
+		font-family $value-sans
+		font-weight normal
+		fs(mp(2))
+		max-width 38rem
+
+		+above($tablet)
+			fs(mp(5))
+	
+	h2
+		font-family $value-sans
+		font-weight normal
+		max-width 11em
+		fs(mp(7))
+
+		+above($tablet)
+			fs(mp(9))
+
+.section
+	&.next-enter-active,
+	&.prev-enter-active
+		transition 1000ms
+
+		.header, .body
+			transition transform 400ms $easeOutQuint
+
+			h1, h2, p, li
+				transition opacity 400ms $easeOutQuint 400ms
+
+		.body
+			transition-delay: 125ms
+			
+	&.next-enter-active
+		.header, .body
+			transform-origin: bottom
+
+	&.prev-enter-active
+		.header, .body
+			transform-origin: top
+
+	&.next-enter-to,
+	&.prev-enter-to
+		.header, .body
+			transform scaleY(1)
+
+			h1, h2, p, li
+				opacity 1
+	
+	&.next-enter-from,
+	&.prev-enter-from
+		.header, .body
+			transform scaleY(0)
+			
+			h1, h2, p, li
+				opacity 0
+
+.body
+	&.next-enter-active,
+	&.prev-enter-active
+		transition transform 600ms $easeOutQuint
+		transition-property background, transform
+		transition-delay 100ms, 0ms
+
+		h1, h2, p, li
+			transition opacity 400ms $easeOutQuint 400ms
+			
+	&.next-enter-active
+		transform-origin: bottom
+
+	&.prev-enter-active
+		transform-origin: top
+
+	&.next-enter-to,
+	&.prev-enter-to
+		background lighten($b,3%)
+		transform scaleY(1)
+
+		h1, h2, p, li
+			opacity 1
+		
+		.even &
+			background darken($w,3%)
+
+	&.next-enter-from,
+	&.prev-enter-from
+		background lighten($b,15%)
+		transform scaleY(0)
+		
+		h1, h2, p, li
+			opacity 0
+
+		.even &
+			background darken($w,15%)
